@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Products"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="#100909"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Well Come"
+            android:textSize="20sp"
+            android:textColor="#058E0A"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/wellCome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0D6AB5"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        >
+
+
+        <EditText
+            android:id="@+id/ProName"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:hint=" Enter Product Name"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        >
+
+
+        <EditText
+            android:id="@+id/ProQ"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:hint=" Enter Product Quantity"
+            />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rdGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Type :"
+            android:textSize="20dp"
+
+            />
+        <RadioButton
+            android:id="@+id/NewP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New"
+            android:layout_marginTop="3dp"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/UsedP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Used"
+            android:layout_marginTop="3dp"
+            />
+
+    </RadioGroup>
+
+<!--   Add products -->
+    <Button
+        android:id="@+id/addPro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Products"
+
+        android:backgroundTint="#579C07"
+        android:layout_gravity="center"
+        android:paddingHorizontal="30dp"
+        android:layout_marginBottom="10dp"
+
+        />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:drawableLeft="@drawable/ic_baseline_login_24"
+        android:backgroundTint="#C30606"
+        android:layout_gravity="center"
+        android:paddingHorizontal="30dp"
+
+        />
+    <TextView
+        android:id="@+id/goToGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go To google"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:textColor="#046895"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+
+    <Button
+        android:id="@+id/listBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="listView"
+        android:drawableLeft="@drawable/listview"
+        android:backgroundTint="#1699AA"
+        android:layout_gravity="center"
+        android:paddingHorizontal="30dp"
+
+        />
+
+</LinearLayout>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="SignUP form"
+        android:textColor="#100909"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        >
+
+
+        <EditText
+            android:id="@+id/xName"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:hint=" Enter Name"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        >
+
+
+        <EditText
+            android:id="@+id/xEmail"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:inputType="textEmailAddress"
+            android:hint=" Enter Email"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        >
+
+
+        <EditText
+            android:id="@+id/xCity"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:hint="Enter City"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        >
+
+
+        <EditText
+            android:id="@+id/xAge"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:hint="Enter Age"
+            />
+    </LinearLayout>
+
+<!--    password-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        >
+
+
+        <EditText
+            android:id="@+id/xPassword"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            />
+    </LinearLayout>
+<!--    con password-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        >
+
+
+        <EditText
+            android:id="@+id/xCpassword"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:hint="Enter Conform Password"
+            android:inputType="textPassword"
+            />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rdGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender :"
+            android:textSize="20dp"
+
+            />
+         <RadioButton
+             android:id="@+id/male"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Male"
+             android:layout_marginTop="3dp"
+             android:checked="true"
+             />
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:layout_marginTop="3dp"
+
+            />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Game:"
+            android:textSize="20dp"
+
+            />
+     <CheckBox
+         android:id="@+id/football"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Football"
+         android:layout_marginTop="3dp"
+         />
+
+        <CheckBox
+            android:id="@+id/hockey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hockey"
+            android:layout_marginTop="3dp"
+            />
+        <CheckBox
+            android:id="@+id/cricket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cricket"
+            android:layout_marginTop="3dp"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        >
+
+
+        <Button
+            android:id="@+id/signUpBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:text="Submit"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+
+            />
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/alreadyRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already Register"
+        android:textSize="20dp"
+        android:textColor="#0388C5"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+</LinearLayout>
